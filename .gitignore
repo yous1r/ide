@@ -1,1 +1,12 @@
 .DS_Store
+
+# plugins repo
+.config/zsh/zpm/*
+.config/tmux/tpm/*
+
+# github repos 
+learning/
+
+# deps
+node_modules
+

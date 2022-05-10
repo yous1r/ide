@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+alias vi="nvim"
+alias vim="nvim"
+
+alias ls="ls -a"
+alias rm="rm -i"
+alias mv="mv -i"
+alias cp="cp -i"
+
+
+
+

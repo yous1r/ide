@@ -1,0 +1,31 @@
+#!/usr/bin/env zsh
+
+# zpm
+# check is first time
+if [[ ! -f $ZPM_HOME/zpm.zsh ]]; then
+  git clone --recursive https://github.com/zpm-zsh/zpm $ZPM_HOME
+fi
+
+# tpm
+# check is first time
+if [[ ! -f $TPM_PLUGINS_CONFIG/tpm ]]; then
+  git clone --recursive https://github.com/tmux-plugins/tpm $TPM_PLUGINS_CONFIG
+fi
+
+# load zpm
+source $ZPM_HOME/zpm.zsh
+
+# zpm clean
+echo "zpm load start"
+
+
+# zplug 
+
+# if [[ ! -f $ZPLUG_HOME/init.zsh ]]; then
+#   git clone https://github.com/zplug/zplug $ZPLUG_HOME
+# fi
+
+# source $ZPLUG_HOME/init.zsh
+
+source $ZSH_CONFIG/plugins/load
+
