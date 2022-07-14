@@ -1,5 +1,11 @@
 #!/usr/bin/env zsh
 
+# pnpm global check
+if [[ ! -d $PNPM_HOME]]; then
+  mkdir -p $HOME/.bin/pnpm
+fi
+
+
 # zpm
 # check is first time
 if [[ ! -f $ZPM_HOME/zpm.zsh ]]; then
