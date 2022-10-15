@@ -1,6 +1,8 @@
 local catppuccin = require("catppuccin")
 
--- configure it
+-- configure 
+-- 主题配置
+
 catppuccin.setup({
     transparent_background = false,
     term_colors = true,

@@ -3,6 +3,7 @@
 # pnpm global check
 if [[ ! -d $PNPM_HOME]]; then
   mkdir -p $HOME/.bin/pnpm
+  echo "$PNPM_HOME created"
 fi
 
 

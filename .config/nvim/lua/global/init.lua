@@ -1,3 +1,6 @@
+local utils = require("util");
+
+-- 映射vim api
 local global = {
     api = vim.api,
     cmd = vim.cmd,
@@ -7,11 +10,10 @@ local global = {
     uv = vim.uv,
     os = os
 };
+
 local os = vim.loop.os_uname().sysname;
 
----
----@return table env
----
+
 function global:generatorGlobalEnv()
     local env = {
         is_mac = os == "Darwin",
@@ -29,6 +31,6 @@ function global:generatorGlobalEnv()
     global.generatorGlobalEnv = nil
 end
 
-require("util"):tryCatch(global:generatorGlobalEnv())
+utils:tryCatch(global:generatorGlobalEnv())
 
 return global

@@ -1,6 +1,6 @@
 print("nvim load start")
 
-local fn,  = require("global.init")
+local fn = require("global.init")
 local pack = require("packer")
 local tryCatch = require("util").tryCatch
 local data_dir = string.format("%s/site/", vim.fn.stdpath("data"))

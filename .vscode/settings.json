@@ -4,5 +4,6 @@
         "use",
         "exclude",
         "PATH"
-    ]
+    ],
+    "commentTranslate.hover.enabled": true
 }
