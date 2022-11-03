@@ -1,10 +1,10 @@
 #!/usr/bin/env zsh
 
-source $HOME/.config/zsh/.env
+source ${HOME}/.config/zsh/.env
 
-source $ZSH_CONFIG/clean
-source $ZSH_CONFIG/alias
-source $ZSH_CONFIG/prompt
+source ${ZSH_CONFIG}/clean
+source ${ZSH_CONFIG}/alias
+source ${ZSH_CONFIG}/prompt
 
-source $ZSH_CONFIG/plugins/init
+source ${ZSH_CONFIG}/plugins/init
 

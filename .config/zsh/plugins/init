@@ -1,26 +1,26 @@
 #!/usr/bin/env zsh
 
 # pnpm global check
-if [[ ! -d $PNPM_HOME]]; then
-  mkdir -p $HOME/.bin/pnpm
-  echo "$PNPM_HOME created"
+if [ ${PNPM_HOME} ]; then
+  mkdir -p ${HOME}/.bin/pnpm
+  echo "${PNPM_HOME} created"
 fi
 
 
 # zpm
 # check is first time
-if [[ ! -f $ZPM_HOME/zpm.zsh ]]; then
-  git clone --recursive https://github.com/zpm-zsh/zpm $ZPM_HOME
+if [[ ! -f ${ZPM_HOME}/zpm.zsh ]]; then
+  git clone --recursive https://github.com/zpm-zsh/zpm ${ZPM_HOME}
 fi
 
 # tpm
 # check is first time
-if [[ ! -f $TPM_PLUGINS_CONFIG/tpm ]]; then
-  git clone --recursive https://github.com/tmux-plugins/tpm $TPM_PLUGINS_CONFIG
+if [[ ! -f ${TPM_PLUGINS_CONFIG}/tpm ]]; then
+  git clone --recursive https://github.com/tmux-plugins/tpm ${TPM_PLUGINS_CONFIG}
 fi
 
 # load zpm
-source $ZPM_HOME/zpm.zsh
+source ${ZPM_HOME}/zpm.zsh
 
 # zpm clean
 echo "zpm load start"
